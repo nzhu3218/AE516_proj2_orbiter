@@ -17,8 +17,7 @@ end
 % graph_comparison2(aoa,cl,cd,cm,aoa2,cl2,cd2,cm2); % plotting
 
 hold on;        % graphing the only data point I have so far
-plot(45,cl,'+',45,cd,'*');
-plot(20,cl,'+',20,cd,'*');
+plot(aoa,cl,'+', aoa, cd,'*');
 hold off;
 
 end
