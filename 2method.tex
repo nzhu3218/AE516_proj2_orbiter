@@ -6,4 +6,25 @@ four
 
 \subsection{Fluent setup}
 
-cell count and normal-to-wall spacing(s) used, min/max included angles, list boundary conditions, list reference values, list submodels chosen (i.e., viscous model selected), and provide numerical scheme and spatial accuracy used.
+cell count: 1,375,480
+normal-to-wall spacing(s) used: 0.001
+min/max included angles: max: 179.844 deg min: 0.06222
+boundary conditions: symmetry: the symmetry plane; wall: orbiter surface; pressure far-field: inlet; pressure outlet: backwall.
+list reference values:
+area: 257.47 m^2 (projected in z)
+density: 0.0167207 (kg/m^3)
+enthalpy: 890742.9 (J/kg)
+length: 38.424 (m)
+pressure: 0 (gauage pressure)
+temperature: 227.13 K
+velocity: 1147.855 (m/s)
+viscosity: 1.789e-5 (kg/m/s)
+ratio of specific heats: 1.4
+
+list submodels chosen (i.e., viscous model selected), and provide numerical scheme and spatial accuracy used:
+
+implicit AUSM
+
+gradient: least squares cell based
+
+flow: first order upwind
