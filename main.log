@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  26 FEB 2020 07:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  26 FEB 2020 08:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,38 +419,45 @@ Package pdftex.def Info: matlab_images/aero_coeff_exp.png  used on input line 1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./repor
 t_images/ss_image.png>]) (./2method.tex
-<report_images/ss_surface_grid.png, id=96, 1519.6775pt x 750.805pt>
+<report_images/ss_entire_grid.png, id=96, 1519.6775pt x 750.805pt>
+File: report_images/ss_entire_grid.png Graphic file (type png)
+<use report_images/ss_entire_grid.png>
+Package pdftex.def Info: report_images/ss_entire_grid.png  used on input line 9
+.
+(pdftex.def)             Requested size: 469.75502pt x 232.08267pt.
+<report_images/ss_surface_grid.png, id=97, 1519.6775pt x 750.805pt>
 File: report_images/ss_surface_grid.png Graphic file (type png)
 <use report_images/ss_surface_grid.png>
 Package pdftex.def Info: report_images/ss_surface_grid.png  used on input line 
 16.
 (pdftex.def)             Requested size: 469.75502pt x 232.08267pt.
  [2 <./matlab_images/aero_coeff_exp.png (PNG copy)>]
-<report_images/ss_nose_LE.png, id=111, 1519.6775pt x 750.805pt>
+<report_images/ss_nose_LE.png, id=112, 1519.6775pt x 750.805pt>
 File: report_images/ss_nose_LE.png Graphic file (type png)
 <use report_images/ss_nose_LE.png>
 Package pdftex.def Info: report_images/ss_nose_LE.png  used on input line 23.
 (pdftex.def)             Requested size: 469.75502pt x 232.08267pt.
-<report_images/ss_wing_LE.png, id=112, 1519.6775pt x 750.805pt>
+ [3 <./report_images/ss_entire_grid.png> <./report_images/ss_surface_grid.png>]
+<report_images/ss_wing_LE.png, id=121, 1519.6775pt x 750.805pt>
 File: report_images/ss_wing_LE.png Graphic file (type png)
 <use report_images/ss_wing_LE.png>
 Package pdftex.def Info: report_images/ss_wing_LE.png  used on input line 30.
 (pdftex.def)             Requested size: 469.75502pt x 232.08267pt.
- [3 <./report_images/ss_surface_grid.png> <./report_images/ss_nose_LE.png>]) (.
-/3results.tex [4 <./report_images/ss_wing_LE.png>]
-<matlab_images/aero_coeff_comp.png, id=129, 1124.2pt x 843.15pt>
+) [4 <./report_images/ss_nose_LE.png> <./report_images/ss_wing_LE.png>] (./3res
+ults.tex
+<matlab_images/aero_coeff_comp.png, id=130, 1124.2pt x 843.15pt>
 File: matlab_images/aero_coeff_comp.png Graphic file (type png)
 <use matlab_images/aero_coeff_comp.png>
 Package pdftex.def Info: matlab_images/aero_coeff_comp.png  used on input line 
 22.
 (pdftex.def)             Requested size: 328.82707pt x 246.61716pt.
-<matlab_images/L2D.png, id=130, 562.1pt x 421.575pt>
+ [5]
+<matlab_images/L2D.png, id=138, 562.1pt x 421.575pt>
 File: matlab_images/L2D.png Graphic file (type png)
 <use matlab_images/L2D.png>
 Package pdftex.def Info: matlab_images/L2D.png  used on input line 29.
 (pdftex.def)             Requested size: 328.82707pt x 246.61716pt.
 
-[5 <./matlab_images/aero_coeff_comp.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 36.
@@ -467,15 +474,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 36.
 
-<report_images/10_sym_pressure_contour.png, id=137, 1052.93375pt x 936.49875pt>
+<report_images/10_sym_pressure_contour.png, id=139, 1052.93375pt x 936.49875pt>
 
 File: report_images/10_sym_pressure_contour.png Graphic file (type png)
 <use report_images/10_sym_pressure_contour.png>
 Package pdftex.def Info: report_images/10_sym_pressure_contour.png  used on inp
 ut line 39.
 (pdftex.def)             Requested size: 469.75502pt x 417.80522pt.
-[6 <./matlab_images/L2D.png (PNG copy)>]
-<report_images/10_sym_temp_contour.png, id=143, 1052.93375pt x 936.49875pt>
+[6 <./matlab_images/aero_coeff_comp.png (PNG copy)> <./matlab_images/L2D.png (P
+NG copy)>]
+<report_images/10_sym_temp_contour.png, id=146, 1052.93375pt x 936.49875pt>
 File: report_images/10_sym_temp_contour.png Graphic file (type png)
 <use report_images/10_sym_temp_contour.png>
 Package pdftex.def Info: report_images/10_sym_temp_contour.png  used on input l
@@ -498,7 +506,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 51.
 
-<report_images/20_sym_pressure_contour.png, id=150, 1052.93375pt x 936.49875pt>
+<report_images/20_sym_pressure_contour.png, id=153, 1052.93375pt x 936.49875pt>
 
 File: report_images/20_sym_pressure_contour.png Graphic file (type png)
 <use report_images/20_sym_pressure_contour.png>
@@ -506,34 +514,34 @@ Package pdftex.def Info: report_images/20_sym_pressure_contour.png  used on inp
 ut line 54.
 (pdftex.def)             Requested size: 469.75502pt x 417.80522pt.
 [8 <./report_images/10_sym_temp_contour.png (PNG copy)>]
-<report_images/20_sym_temp_contour.png, id=156, 1052.93375pt x 936.49875pt>
+<report_images/20_sym_temp_contour.png, id=159, 1052.93375pt x 936.49875pt>
 File: report_images/20_sym_temp_contour.png Graphic file (type png)
 <use report_images/20_sym_temp_contour.png>
 Package pdftex.def Info: report_images/20_sym_temp_contour.png  used on input l
 ine 61.
 (pdftex.def)             Requested size: 469.75502pt x 417.80522pt.
  [9 <./report_images/20_sym_pressure_contour.png (PNG copy)>]) (./appendix.tex
-<matlab_images/10_conv_history.png, id=162, 562.2606pt x 421.575pt>
+<matlab_images/10_conv_history.png, id=165, 562.2606pt x 421.575pt>
 File: matlab_images/10_conv_history.png Graphic file (type png)
 <use matlab_images/10_conv_history.png>
 Package pdftex.def Info: matlab_images/10_conv_history.png  used on input line 
 6.
 (pdftex.def)             Requested size: 328.82707pt x 246.55283pt.
  [10 <./report_images/20_sym_temp_contour.png (PNG copy)>]
-<matlab_images/20_conv_history.png, id=168, 562.2606pt x 421.575pt>
+<matlab_images/20_conv_history.png, id=172, 562.2606pt x 421.575pt>
 File: matlab_images/20_conv_history.png Graphic file (type png)
 <use matlab_images/20_conv_history.png>
 Package pdftex.def Info: matlab_images/20_conv_history.png  used on input line 
 13.
 (pdftex.def)             Requested size: 328.82707pt x 246.55283pt.
  [11 <./matlab_images/10_conv_history.png (PNG copy)>]
-<matlab_images/30_conv_history.png, id=176, 562.2606pt x 421.575pt>
+<matlab_images/30_conv_history.png, id=179, 562.2606pt x 421.575pt>
 File: matlab_images/30_conv_history.png Graphic file (type png)
 <use matlab_images/30_conv_history.png>
 Package pdftex.def Info: matlab_images/30_conv_history.png  used on input line 
 20.
 (pdftex.def)             Requested size: 328.82707pt x 246.55283pt.
-<matlab_images/999_conv_history.png, id=177, 562.2606pt x 421.575pt>
+<matlab_images/999_conv_history.png, id=180, 562.2606pt x 421.575pt>
 File: matlab_images/999_conv_history.png Graphic file (type png)
 <use matlab_images/999_conv_history.png>
 Package pdftex.def Info: matlab_images/999_conv_history.png  used on input line
@@ -547,15 +555,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EE012D9DCF10F324876961BD4D7722EB;1375.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: EE012D9DCF10F324876961BD4D7722EB;1375
+(rerunfilecheck)             After:  5D25D04918A42E4A140BF030CA5ECAAE;1370.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 7849 strings out of 492616
- 119051 string characters out of 6129482
- 221916 words of memory out of 5000000
- 11604 multiletter control sequences out of 15000+600000
+ 7855 strings out of 492616
+ 119233 string characters out of 6129482
+ 222916 words of memory out of 5000000
+ 11608 multiletter control sequences out of 15000+600000
  11818 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,40p,462b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -575,10 +593,10 @@ ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
 19/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (13 pages, 1729677 bytes).
+Output written on main.pdf (13 pages, 1657658 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
