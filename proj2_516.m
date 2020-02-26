@@ -75,7 +75,7 @@ function [aoa_deg,cl,cd] = Dilao_and_Fonseca(aoa, M)
 maxAoA = max(aoa);
 minAoA = min(aoa);
 
-aoa_deg = linspace(minAoA,maxAoA,20);
+aoa_deg = linspace(minAoA,maxAoA,100);
 aoa = aoa_deg*pi/180;
 
 a1 = -0.053; a2 = 2.73; a3 = -1.55;
@@ -140,8 +140,6 @@ if L2D
     axis([min(aoa)-5, max(aoa)+5, min([l2d_cfd,l2d_anal])/1.1,...
         max([l2d_cfd,l2d_anal])*1.1]);
     legend('L/D (Experimental)','L/D (CFD)','2nd-order fit of L/D (CFD)');
-    
-    
     
     txt = '\leftarrow sin(\pi) = 0';
     text(pi,sin(pi),txt)
