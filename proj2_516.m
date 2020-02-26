@@ -15,16 +15,21 @@ for i = 1:length(aoa)
 end
 
 [aoa2,cl2,cd2] = Dilao_and_Fonseca(aoa,M);  % fit of experimental data
-
+ 
 graph_comparison(aoa,cl,cd,aoa2,cl2,cd2); % plotting
 
 end
 
 function [avg_cl,avg_cd] = readAoA(AoA)
 
-cd = importdata([num2str(AoA), '/report-drag-rfile.out']);
-cl = importdata([num2str(AoA), '/report-lift-rfile.out']);
-% cm = importdata([num2str(AoA), '/report-mom-rfile.out']);
+if AoA == 999
+    cd = importdata('20_adapt/report-drag-rfile.out');
+    cl = importdata('20_adapt/report-lift-rfile.out');
+else
+    cd = importdata([num2str(AoA), '/report-drag-rfile.out']);
+    cl = importdata([num2str(AoA), '/report-lift-rfile.out']);
+    % cm = importdata([num2str(AoA), '/report-mom-rfile.out']);
+end
 
 cd = cd.data(:,2);
 cl = cl.data(:,2);
@@ -46,16 +51,21 @@ end
 % avg_cm = avg_cm + avg_cl/4;
 
 % plotting the convergence history
+plotting = 0;
+if plotting
+    iter = 1:numel(cd);
 
-iter = 1:numel(cd);
+    figure;
+    plot(iter,cd,iter,cl);
+    if AoA == 999, hold on; plot([4952 4952],[0 1],'r--'); hold off; end
+    title('Convergence History'); grid on; grid minor;
+    xlabel('Iterations '); ylabel('Aerodynamic Coefficient [-]');
+    legend('C_D','C_L');
+    set(gca,'fontname','times','fontsize',16);
+    axis([0 max(iter) min([cd;cl])/1.2 max([cd;cl])*1.2])
 
-figure;
-plot(iter,cd,iter,cl);
-title('Convergence History'); grid on; grid minor;
-xlabel('Iterations '); ylabel('Aerodynamic Coefficient [-]');
-legend('Cd','Cl');
-set(gca,'fontname','times','fontsize',16);
-axis([0 max(iter) min([cd;cl])/1.2 max([cd;cl])*1.2])
+    saveas(gcf,['./matlab_images/',num2str(AoA),'_conv_history'],'png')
+end
 
 end
 
@@ -94,14 +104,14 @@ coeff = 1;
 if coeff
     figure;
     plot(aoa2,cl2,'r',aoa2,cd2,'b'); hold on;
-    plot(aoa,cl,'r+', aoa, cd,'b+','markersize',12); hold off;
+    plot(aoa,cl,'r+--', aoa, cd,'b+--','markersize',12); hold off;
     title('Aerodynamic Coefficients of the Space Shutte');
     grid on; grid minor;
     xlabel('AoA [deg]'); ylabel('Aerodynamic Coefficients [-]');
     set(gca,'fontname','times','fontsize',16);
-    axis([0 50, 0 1.2]);
-    legend('Cl (Experimental)','Cd (Experimental)', ...
-        'Cl (CFD)','Cd (CFD)','location','nw');
+    axis([min(aoa2)-5 max(aoa2)+5, 0 1]);
+    legend('C_L (Experimental Model)','C_D (Experimental Model)', ...
+        'C_L (CFD)','C_D (CFD)','location','nw');
 end
 
 % lift to drag ratio
@@ -115,6 +125,8 @@ if L2D
     % matlab built-in polyfit
     p = polyfit(aoa,l2d_cfd,2);
     l2d_cfd_fit = polyval(p,aoa2);
+    
+    [max_val_CFD, max_arg_CFD] = max(l2d_cfd_fit);
 
     figure;
     plot(aoa2,l2d_anal,'r'); hold on;
@@ -128,6 +140,12 @@ if L2D
     axis([min(aoa)-5, max(aoa)+5, min([l2d_cfd,l2d_anal])/1.1,...
         max([l2d_cfd,l2d_anal])*1.1]);
     legend('L/D (Experimental)','L/D (CFD)','2nd-order fit of L/D (CFD)');
+    
+    
+    
+    txt = '\leftarrow sin(\pi) = 0';
+    text(pi,sin(pi),txt)
+    
 end
 
 
